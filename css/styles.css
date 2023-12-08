@@ -4,6 +4,15 @@ body{
     background-color: #FFFFFF;
 }
 
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+} 
+
+ul{
+    margin: 0;
+    padding: 0;
+}
 
 a{
     text-decoration: none;
@@ -11,6 +20,10 @@ a{
 
 li{
 list-style-type: none;
+}
+
+.wrapper{
+
 }
 /* Header */
 .logo-dark{
@@ -32,6 +45,15 @@ list-style-type: none;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+   
+}
+
+.logo-container{
+    display: inline-flex;
+    height: 24px;
+    align-items: center;
+    flex-shrink: 0;
+   
 }
 
  .nav-list-link{
@@ -44,12 +66,14 @@ list-style-type: none;
     
 }
 
+
  .nav-list-link:hover, .nav-list-link:focus{
     color: #404BBF;
 }
 
 .address-section{
     font-style: normal;
+   
 }
 
 .address-list-item{
@@ -64,10 +88,38 @@ list-style-type: none;
     color: #404BBF;
 }
 
+.page-header .container{
+    display: flex;
+    flex-basis: 1440px;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    
+
+    
+}
+
+.nav-list{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+    flex-shrink: 0;
+}
+
+.address-list{
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+
 /* Main section one */
 
 .section-hero{
 background-color: #2E2F42;
+min-width: 1440px;
+    height: 600px;
 }
 
 .hero-title{
@@ -77,6 +129,13 @@ background-color: #2E2F42;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    width: 496px;
+}
+.hero-title-container{
+    padding-top: 188px;
+    padding-left: 472px;
+    padding-right: 472px;
+    margin-bottom: 48px;
 }
 
 .hero-button{
@@ -88,7 +147,15 @@ background-color: #2E2F42;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    padding: 16px 32px;
+    border-radius: 4px;
         
+}
+.hero-button-container{
+    padding-right: 636px;
+    padding-bottom: 188px;
+    padding-left: 635px;
+    margin-top: 0;
 }
 
 .hero-button:hover, .hero-button:focus{
@@ -109,6 +176,24 @@ background-color: #2E2F42;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+.comp-qual-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+}
+
+.company-features{
+margin-bottom: 120px;
+margin-top: 120px; 
+padding-left: 156px;
+    padding-right: 156px;
+}
+
+.comp-team-list-item{
+    width: 264px;
+    
 }
 
 /* Main company team */
@@ -143,6 +228,7 @@ letter-spacing: 0.02em;
 
 .comp-team-section{
     background-color: #F4F4FD;
+   
 }
 
 /* Main portfolio */
