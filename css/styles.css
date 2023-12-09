@@ -111,12 +111,10 @@ margin-right: 76px;
     display: flex;
     gap: 40px;
     margin-right: 332px;
+    padding: 24px 0;
     
 }
 
-.nav-list-item{
-    padding: 24px 0;
-}
 
 .address-list{
     display: flex;
@@ -163,10 +161,10 @@ padding-bottom: 188px;
 
     border-radius: 4px;
     display: block;
-    max-width: 169px;
+    min-width: 169px;
     height: 56px;
     border: none;
-    
+   margin: auto 0 ;
 }
 
 
