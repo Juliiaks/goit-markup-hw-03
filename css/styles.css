@@ -70,8 +70,7 @@ margin-right: 76px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
-    padding: 24px 0;
+   
     
 }
 
@@ -113,6 +112,8 @@ margin-right: 76px;
     display: flex;
     gap: 40px;
     margin-right: 332px;
+    padding-top: 24px;
+        padding-bottom: 24px;
 }
 
 
@@ -164,7 +165,7 @@ padding-bottom: 188px;
     min-width: 169px;
     height: 56px;
     border: none;
-   margin: auto 0 ;
+   margin-left: 470px;
 }
 
 
@@ -233,7 +234,6 @@ padding-bottom: 188px;
 .comp-team-header{
     margin-right: auto;
     margin-left: auto;
-    padding-top: 120px;
     margin-bottom: 72px;
 }
 
@@ -254,7 +254,7 @@ padding-bottom: 188px;
 .comp-team-list{
     display: flex;
     gap: 24px;
-    padding-bottom: 120px;
+    
     
 
     
