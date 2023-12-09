@@ -4,6 +4,14 @@ body{
     background-color: #FFFFFF;
 }
 
+.container{
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
     padding: 0;
@@ -22,9 +30,10 @@ li{
 list-style-type: none;
 }
 
-.wrapper{
-
+img {
+    display: block;
 }
+
 /* Header */
 .logo-dark{
     color: #2E2F42;
@@ -36,7 +45,7 @@ list-style-type: none;
     text-transform: uppercase;
 }
 
-.logo{
+ .logo{
     color:  #4D5AE5;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -46,17 +55,15 @@ list-style-type: none;
     letter-spacing: 0.03em;
     text-transform: uppercase;
    
-}
-
-.logo-container{
-    display: inline-flex;
-    height: 24px;
-    align-items: center;
-    flex-shrink: 0;
    
 }
+.page-nav .logo{
+margin-right: 76px;
+}
 
- .nav-list-link{
+
+
+.nav-list-link{
     color:#2E2F42;
     font-size: 16px;
     font-style: normal;
@@ -90,26 +97,27 @@ list-style-type: none;
 
 .page-header .container{
     display: flex;
-    flex-basis: 1440px;
-    height: 72px;
-    justify-content: center;
-    align-items: center;
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    align-items: center;
     
+}
 
-    
+.page-nav{
+    display: flex;
+    padding: 24px 0;
+    align-items: center;
+
 }
 
 .nav-list{
-    display: inline-flex;
-    align-items: flex-start;
+    display: flex;
     gap: 40px;
-    flex-shrink: 0;
+    margin-right: 332px;
+    
 }
 
 .address-list{
-    display: inline-flex;
-    align-items: flex-end;
+    display: flex;
     gap: 40px;
 }
 
@@ -118,25 +126,22 @@ list-style-type: none;
 
 .section-hero{
 background-color: #2E2F42;
-min-width: 1440px;
-    height: 600px;
 }
 
 .hero-title{
     color:  #FFF;
     text-align: center;
     font-size: 56px;
-    font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+
     width: 496px;
-}
-.hero-title-container{
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 188px;
-    padding-left: 472px;
-    padding-right: 472px;
     margin-bottom: 48px;
 }
+
 
 .hero-button{
     color: #FFF;
@@ -147,15 +152,16 @@ min-width: 1440px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+
     padding: 16px 32px;
     border-radius: 4px;
-        
+   
 }
 .hero-button-container{
-    padding-right: 636px;
-    padding-bottom: 188px;
-    padding-left: 635px;
+   padding-bottom: 188px;
     margin-top: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-button:hover, .hero-button:focus{
@@ -163,53 +169,89 @@ min-width: 1440px;
 }
 
 /* Main features */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
  .comp-qual-list-header{
     color: #2E2F42 ;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 8px;
 }
 
 .comp-qual-list-text{
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+
+
+.comp-qual-list-item{
+    width: 264px;
+}
+
 .comp-qual-list{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: center;
     gap: 24px;
+    padding: 120px 0;
 }
 
-.company-features{
-margin-bottom: 120px;
-margin-top: 120px; 
-padding-left: 156px;
-    padding-right: 156px;
-}
-
-.comp-team-list-item{
-    width: 264px;
-    
-}
 
 /* Main company team */
 .comp-team-header{
     color: #2E2F42;
     text-align: center;
     font-size: 36px;
-    font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    
 }
+
+.comp-team-header{
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 120px;
+}
+
+
+
+
 
 .comp-team-list-item{
     background-color: #FFF;
+    width: 264px;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  
 }
+    
+.comp-team-list{
+    display: flex;
+    gap: 24px;
+    padding-bottom: 120px;
+    margin-top: 72px;
+
+    
+}
+
+
 
 .comp-team-list-name{
     color: #2E2F42;
@@ -217,13 +259,22 @@ padding-left: 156px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
+    padding-top: 32px;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: center;
 }
 
 .comp-team-list-text{
 font-size: 16px;
-font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
+
+padding-bottom: 32px;
+padding-top: 0;
+display: flex;
+    justify-content: center;
 }
 
 .comp-team-section{
@@ -236,10 +287,25 @@ letter-spacing: 0.02em;
     color: #2E2F42;
     text-align: center;
     font-size: 36px;
-    font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+
+    padding-top: 120px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 72px;
+}
+
+.our-portf-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+gap: 24px;
+row-gap: 48px;
+}
+.our-portf-list-item{
+    width: calc((100% - 48px) / 3);
 }
 
 .our-portf-list-name{
@@ -249,18 +315,32 @@ letter-spacing: 0.02em;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
+    padding-top: 32px;
+        padding-bottom: 8px;
 }
 
 .our-portf-list-descr{
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
+    padding-bottom: 32px;
+        padding-top: 0;
+}
+
+.name-descr-container{
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+        background: var(--WHITE, #FFF);
+        padding-right: 16px;
+        padding-left: 16px;
 }
 
 /* Footer */
 .page-footer{
     background-color: #2E2F42;
+    padding-top: 100px;
+padding-bottom: 100px;
 }
 
 .logo-part-footer{
@@ -276,7 +356,15 @@ letter-spacing: 0.02em;
 .footer-text{
     color: #F4F4FD;
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
+    width: 264px;
+    
+
+}
+
+ .page-footer .logo {
+   display: inline-block;
+    margin-bottom: 16px;
 }

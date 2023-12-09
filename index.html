@@ -26,7 +26,7 @@
       <!-- Header -->
       <header class="page-header">
         <div class="container">
-          <nav>
+          <nav class="page-nav">
             <div class="logo-container">
               <a href="./index.html" class="logo"
                 >Web<span class="logo-dark">Studio</span></a
@@ -62,9 +62,7 @@
         <!-- Page title -->
         <section class="section-hero">
           <div class="container">
-            <div class="hero-title-container">
-              <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            </div>
+            <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <div class="hero-button-container">
               <button class="hero-button" type="button">Order Service</button>
             </div>
@@ -74,9 +72,10 @@
         <!-- Company qualities -->
         <section class="company-features">
           <div class="container">
-            <h2 hidden>Company qualities</h2>
+            <h2 class="visually-hidden">Company qualities</h2>
+
             <ul class="comp-qual-list">
-              <li>
+              <li class="comp-qual-list-item">
                 <h3 class="comp-qual-list-header">Strategy</h3>
                 <p class="comp-qual-list-text">
                   Our goal is to identify the business problem to walk away with
@@ -84,7 +83,7 @@
                 </p>
               </li>
 
-              <li>
+              <li class="comp-qual-list-item">
                 <h3 class="comp-qual-list-header">Punctuality</h3>
                 <p class="comp-qual-list-text">
                   Bring the key message to the brand's audience for the best
@@ -92,7 +91,7 @@
                 </p>
               </li>
 
-              <li>
+              <li class="comp-qual-list-item">
                 <h3 class="comp-qual-list-header">Diligence</h3>
                 <p class="comp-qual-list-text">
                   Research and confirm brands that present the strongest digital
@@ -100,7 +99,7 @@
                 </p>
               </li>
 
-              <li>
+              <li class="comp-qual-list-item">
                 <h3 class="comp-qual-list-header">Technologies</h3>
                 <p class="comp-qual-list-text">
                   Design practice focused on digital experiences. We bring forth
@@ -115,6 +114,7 @@
         <section class="comp-team-section">
           <div class="container">
             <h2 class="comp-team-header">Our Team</h2>
+
             <ul class="comp-team-list">
               <li class="comp-team-list-item">
                 <img
@@ -125,6 +125,7 @@
                 <h3 class="comp-team-list-name">Mark Guerrero</h3>
                 <p class="comp-team-list-text">Product Designer</p>
               </li>
+
               <li class="comp-team-list-item">
                 <img
                   src="./images/team-members/man2.jpg"
@@ -134,6 +135,7 @@
                 <h3 class="comp-team-list-name">Tom Ford</h3>
                 <p class="comp-team-list-text">Frontend Developer</p>
               </li>
+
               <li class="comp-team-list-item">
                 <img
                   src="./images/team-members/woman3.jpg"
@@ -143,6 +145,7 @@
                 <h3 class="comp-team-list-name">Camila Garcia</h3>
                 <p class="comp-team-list-text">Marketing</p>
               </li>
+
               <li class="comp-team-list-item">
                 <img
                   src="./images/team-members/man4.jpg"
@@ -162,64 +165,76 @@
             <h2 class="our-portf-header">Our Portfolio</h2>
 
             <ul class="our-portf-list">
-              <li>
+              <li class="our-portf-list-item">
                 <img
                   src="./images/portfolio/app1.jpg"
                   alt="Banking App"
                   width="360"
                   height="300" />
-                <h3 class="our-portf-list-name">Banking App</h3>
-                <p class="our-portf-list-descr">App</p>
+                <div class="name-descr-container">
+                  <h3 class="our-portf-list-name">Banking App</h3>
+                  <p class="our-portf-list-descr">App</p>
+                </div>
               </li>
 
-              <li>
+              <li class="our-portf-list-item">
                 <img
                   src="./images/portfolio/scaner2.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300" />
-                <h3 class="our-portf-list-name">Cashless Payment</h3>
-                <p class="our-portf-list-descr">Marketing</p>
+                <div class="name-descr-container">
+                  <h3 class="our-portf-list-name">Cashless Payment</h3>
+                  <p class="our-portf-list-descr">Marketing</p>
+                </div>
               </li>
 
-              <li>
+              <li class="our-portf-list-item">
                 <img
                   src="./images/portfolio/laptop3.jpg"
                   alt="Meditation App"
                   width="360"
                   height="300" />
-                <h3 class="our-portf-list-name">Meditation App</h3>
-                <p class="our-portf-list-descr">App</p>
+                <div class="name-descr-container">
+                  <h3 class="our-portf-list-name">Meditation App</h3>
+                  <p class="our-portf-list-descr">App</p>
+                </div>
               </li>
 
-              <li>
+              <li class="our-portf-list-item">
                 <img
                   src="./images/portfolio/car4.jpg"
                   alt="Taxi Service"
                   width="360"
                   height="300" />
-                <h3 class="our-portf-list-name">Taxi Service</h3>
-                <p class="our-portf-list-descr">Marketing</p>
+                <div class="name-descr-container">
+                  <h3 class="our-portf-list-name">Taxi Service</h3>
+                  <p class="our-portf-list-descr">Marketing</p>
+                </div>
               </li>
 
-              <li>
+              <li class="our-portf-list-item">
                 <img
                   src="./images/portfolio/phone5.jpg"
                   alt="Screen Illustrations"
                   width="360"
                   height="300" />
-                <h3 class="our-portf-list-name">Screen Illustrations</h3>
-                <p class="our-portf-list-descr">Design</p>
+                <div class="name-descr-container">
+                  <h3 class="our-portf-list-name">Screen Illustrations</h3>
+                  <p class="our-portf-list-descr">Design</p>
+                </div>
               </li>
 
-              <li>
+              <li class="our-portf-list-item">
                 <img
                   src="./images/portfolio/girl6.jpg"
                   alt="Online Courses"
                   width="360"
                   height="300" />
-                <h3 class="our-portf-list-name">Online Courses</h3>
-                <p class="our-portf-list-descr">Marketing</p>
+                <div class="name-descr-container">
+                  <h3 class="our-portf-list-name">Online Courses</h3>
+                  <p class="our-portf-list-descr">Marketing</p>
+                </div>
               </li>
             </ul>
           </div>
